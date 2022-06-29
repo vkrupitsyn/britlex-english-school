@@ -1,1 +1,225 @@
+:root {
+  --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
+  --main-color: #000000;
+  --sec-color: #8f95a5;
+  --btn-border-color: #263238;
+  --white-color: #ffffff;
+  --get-btn-bg: #263238;
+  --skills-item-bg: #f5f5f5;
+}
 
+/* Common styles */
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+  margin: 0;
+}
+
+ul,
+li {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+.container {
+  width: 1378px;
+  padding: 0 20px;
+}
+
+.section {
+  padding-bottom: 180px;
+}
+
+.title {
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.subtitle {
+  ont-weight: 600;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/* Header */
+.section.header {
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.logo {
+  font-size: 36px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.nav-hd {
+  display: flex;
+  align-items: center;
+}
+
+.nav-hd-list .item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-hd-list {
+  display: flex;
+  padding-left: 228px;
+
+  font-weight: 500;
+}
+
+.nav-hd-list .link:hover,
+.nav-hd-list .link:active {
+  color: var(--sec-color);
+  transition: color 250ms var(--cubic-bezier);
+}
+
+.let-btn {
+  display: block;
+  width: 312px;
+  margin-left: auto;
+  padding: 20px 0;
+  text-align: center;
+  border: 2px solid var(--btn-border-color);
+  border-radius: 10px;
+  transition: background-color 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
+}
+
+.let-btn:hover,
+.let-btn:active {
+  background-color: var(--get-btn-bg);
+  color: var(--white-color);
+}
+
+/* Hero section */
+
+.hero-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Hero left section */
+
+.left-wrap {
+  width: 540px;
+}
+
+.hero-title {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+}
+
+.hero-text {
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: var(--sec-text-color);
+}
+
+.get-btn {
+  display: block;
+  width: 426px;
+  padding: 23px 0;
+  font-size: 36px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid var(--btn-border-color);
+  border-radius: 10px;
+  background-color: var(--get-btn-bg);
+  color: var(--white-color);
+  transition: background-color 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
+}
+
+.get-btn:hover,
+.get-btn:active {
+  background-color: var(--white-color);
+  color: var(--main-color);
+}
+
+/* Skills section */
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skill-item {
+  display: block;
+  width: 426px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  padding: 32px 18px;
+  border-radius: 10px;
+  background-color: var(--skills-item-bg);
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+.skill-text {
+  margin-bottom: 20px;
+  color: var(--sec-color);
+}
+
+.lrn-btn {
+  position: relative;
+  display: block;
+  width: 230px;
+  padding: 17px 0;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  cursor: pointer;
+  border: 2px solid var(--btn-border-color);
+  border-radius: 10px;
+  background-color: var(--get-btn-bg);
+  color: var(--white-color);
+  transition: background-color 250ms var(--cubic-bezier), color 250ms var(--cubic-bezier);
+}
+
+.lrn-btn:hover,
+.lrn-btn:active {
+  background-color: var(--white-color);
+  color: var(--main-color);
+}
+
+.sum-text {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
